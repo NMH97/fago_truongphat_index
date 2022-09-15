@@ -3,7 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    
+        --mau_chu_dao_1: #39a8f8;
+        --mau_chu_dao_2: #ea3c29;
+        --mau_chu_dao_3: #0054a0;
+        --mau_chu_dao_4: #333;
+        --mau_chu_dao_5: #0770b7;
+        --mau_chu_dao_6: #f9f9f9;
+        --do_hay_dung: #D9001B;
+        
+}
+.radius-4{
+    border-radius: 4px !important;
+}
+.btn{
+    border-radius: 4px !important;
+}
+.row{
+    
+}
+
 body{
+    font-family: 'Roboto', sans-serif !important;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -238,7 +260,7 @@ body{
 
 .description_company{
     min-height: 161px;
-    background-color: #d4baba;
+    background-color: var(--mau_chu_dao_6);
     padding: 0 12px;
 }
 
@@ -255,16 +277,16 @@ body{
 
 
 .description_company--item img{
-    width: 65px;
-    height: 69px;
+    width: 75px;
+    height: 81px;
 }
 .description_company--item p{
-    font-size: 12px;
+    font-size: 16px;
     margin: 10px 0;
 }
 .description_company--item span{
-    font-size: 10px;
-    color: #0770b7;
+    font-size: 14px;
+    
 }
 .boder-right{
     border-right:2px solid #ccc;
@@ -311,7 +333,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
     cursor: pointer;
 }
 .intro_description label:hover{
@@ -359,7 +380,7 @@ body{
 
 }
 .service_truongphat--content{
-    padding:0 32px;
+    padding: 32px;
 }
 .service_truongphat--content h4{
     text-transform: uppercase;
@@ -379,6 +400,11 @@ body{
     font-size: 16px;
     padding: 16px;
     margin-bottom: 8px;
+}
+@media (max-width:576px){
+    .service_truongphat--content{
+        padding: 16px !important;
+    }
 }
 
 @media (max-width:992px){
@@ -406,7 +432,7 @@ body{
     cursor: pointer;
 }
 .whyus_content-description{
-    padding: 16px;
+    padding: 70px 16px;
     margin: 16px 0;
 }
 .whyus_content-description span{
@@ -650,7 +676,7 @@ body{
     align-items: center;
     color: white;
     font-size: 20px;    
-    padding: 32px 0;
+    padding: 32px 0 !important;
 }
 
 /* end slogan */
@@ -683,9 +709,11 @@ body{
 
 
 .contactus_formsubmit{
-    padding: 32px;
+    
+    padding: 16px;
+    display: block;
     width: 100%;
-    height: 100%;
+    
     
     
     
